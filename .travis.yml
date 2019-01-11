@@ -4,6 +4,7 @@ dist: xenial
 addons:
   apt:
     packages:
+      - lazarus
       - lcl-utils-1.6
 
 before_script:
