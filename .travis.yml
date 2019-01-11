@@ -10,11 +10,12 @@ addons:
 
 script:
   - lazbuild -q -q Source/LdapAdmin.lpi
+  - tar -cvzf LdapAdmin-linux-64bit.tgz -C Source LdapAdmin
 
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
-  file: Source/LdapAdmin
+  file: LdapAdmin-linux-64bit.tgz
   skip_cleanup: true
   on:
     tags: true
