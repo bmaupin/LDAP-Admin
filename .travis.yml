@@ -4,14 +4,9 @@ dist: xenial
 addons:
   apt:
     packages:
-      - fpc
-      - fpc-source
+      # Travis uses --no-install-suggests and --no-install-recommends so all necessary packages must be explicitly defined
       - lazarus
       - lcl
-      - lcl-utils-1.6
-
-before_script:
-  - ls -l Source/LdapAdmin; true
 
 script:
   - lazbuild -q -q Source/LdapAdmin.lpi
