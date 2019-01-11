@@ -4,6 +4,7 @@ dist: xenial
 addons:
   apt:
     packages:
+      - fpc
       - lazarus
       - lcl-utils-1.6
 
