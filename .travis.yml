@@ -1,0 +1,16 @@
+language: minimal
+dist: xenial
+
+addons:
+  apt:
+    packages:
+      - lazarus
+
+before_script:
+  - ls LDAP-Admin/Source/LdapAdmin
+
+script:
+  - lazbuild LDAP-Admin/Source/LdapAdmin.lpi
+
+after_script:
+  - ls LDAP-Admin/Source/LdapAdmin
