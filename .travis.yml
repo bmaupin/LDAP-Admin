@@ -11,10 +11,10 @@ addons:
       - lcl-utils-1.6
 
 before_script:
-  - ls LDAP-Admin/Source/LdapAdmin; true
+  - ls Source/LdapAdmin; true
 
 script:
-  - lazbuild Source/LdapAdmin.lpi
+  - lazbuild -q Source/LdapAdmin.lpi
 
 after_script:
-  - ls LDAP-Admin/Source/LdapAdmin
+  - ls Source/LdapAdmin
