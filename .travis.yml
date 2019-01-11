@@ -5,7 +5,9 @@ addons:
   apt:
     packages:
       - fpc
+      - fpc-source
       - lazarus
+      - lcl
       - lcl-utils-1.6
 
 before_script:
