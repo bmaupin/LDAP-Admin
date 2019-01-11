@@ -8,11 +8,9 @@ addons:
 
 before_script:
   - ls LDAP-Admin/Source/LdapAdmin; true
-  - which lazbuild; true
-  - echo $PATH
 
 script:
-  - lazbuild LDAP-Admin/Source/LdapAdmin.lpi
+  - lazbuild Source/LdapAdmin.lpi
 
 after_script:
   - ls LDAP-Admin/Source/LdapAdmin
