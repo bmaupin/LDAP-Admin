@@ -7,7 +7,7 @@ addons:
       - lazarus
 
 before_script:
-  - ls LDAP-Admin/Source/LdapAdmin
+  - ls LDAP-Admin/Source/LdapAdmin; true
 
 script:
   - lazbuild LDAP-Admin/Source/LdapAdmin.lpi
