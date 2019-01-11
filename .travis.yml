@@ -4,10 +4,12 @@ dist: xenial
 addons:
   apt:
     packages:
-      - lazarus
+      - lcl-utils-1.6
 
 before_script:
   - ls LDAP-Admin/Source/LdapAdmin; true
+  - which lazbuild; true
+  - echo $PATH
 
 script:
   - lazbuild LDAP-Admin/Source/LdapAdmin.lpi
